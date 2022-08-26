@@ -16,8 +16,20 @@ type UseFetchOptions = {
     pick?: KeyOfRes<(input: DataT) => DataT>
 }
 
+interface DTOModel {
+    comments: any,
+    comments_count: number,
+    id: number,
+    points: number,
+    time: number,
+    title: string,
+    type: string,
+    url: string,
+    user: string,
+}
+
 type DataT = {
-    data: Ref<DataT>
+    data: Ref<DTOModel>
     pending: Ref<boolean>
     refresh: () => Promise<void>
     error: Ref<Error | boolean>
