@@ -10,12 +10,12 @@
 </template>
 
 <script setup lang="ts">
-import { testApi } from "./api/api";
+import { FeedsApi } from "./api/api";
 const {
     data,
     pending,
     refresh
-} = await testApi({ feed: 'news', page: 1 });
+} = await FeedsApi({ feed: 'news', page: 1 });
 </script>
 
 <style scoped>

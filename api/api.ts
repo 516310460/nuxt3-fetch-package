@@ -1,12 +1,12 @@
 import { api } from './request'
 
 enum Api {
-    test = '/api/hn/feeds',
+    Feeds = '/api/hn/feeds',
 }
 
-interface TestModel {
+interface FeedsModel {
     feed: string,
     page: number,
 }
 
-export const testApi = (params: TestModel) => api( Api.test, { method: 'GET', params: params } );
+export const FeedsApi = (params: FeedsModel) => api( Api.Feeds, { method: 'GET', params: params } );
