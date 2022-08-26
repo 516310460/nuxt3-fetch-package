@@ -1,0 +1,32 @@
+{
+  "name": "bitfrog",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "@element-plus/icons-vue": "^1.1.4",
+    "@nuxt/types": "^2.15.8",
+    "element-plus": "^2.2.0",
+    "nuxt-ui": "^0.4.3",
+    "pinia": "^2.0.14",
+    "@pinia/nuxt": "^0.1.9",
+    "pinia-nuxt-persist": "^0.0.3",
+    "primeicons": "^5.0.0",
+    "primevue": "^3.15.0"
+  },
+  "devDependencies": {
+    "@types/js-cookie": "^3.0.2",
+    "@unocss/transformer-directives": "^0.39.0",
+    "echarts": "^5.3.3",
+    "js-cookie": "^3.0.1",
+    "nuxt": "v3.0.0-rc.4",
+    "nuxt-windicss": "^2.4.2",
+    "sass": "^1.52.3",
+    "unplugin-auto-import": "^0.8.8",
+    "unplugin-vue-components": "^0.19.6"
+  },
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "start": "nuxi preview"
+  },
+}
