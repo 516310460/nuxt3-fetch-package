@@ -7,7 +7,7 @@ type UseFetchOptions = {
     method?: string,
     params?: any,
     body?: RequestInit['body'] | Record<string, any>
-    headers?: {key: string, value: string},
+    headers?: { key: string, value: string },
     baseURL?: string,
     server?: boolean
     lazy?: boolean
@@ -35,9 +35,9 @@ type DataT = {
     error: Ref<Error | boolean>
 }
 
-export const api = function (url: NitroFetchRequest | Ref<NitroFetchRequest> | (() => NitroFetchRequest), options?: UseFetchOptions): Promise<DataT>{
+export function request<T = any>(url: NitroFetchRequest | Ref<NitroFetchRequest> | (() => NitroFetchRequest), options?: UseFetchOptions): Promise<T> {
     return new Promise(resolve => {
-        // 对象合并
+        // Default configuration and merge
         const opts = {
             // key: `${new Date().getTime()}`,
             // method: 'GET',
@@ -58,4 +58,3 @@ export const api = function (url: NitroFetchRequest | Ref<NitroFetchRequest> | (
     })
 }
 
-    
