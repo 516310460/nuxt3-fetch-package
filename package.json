@@ -1,13 +1,12 @@
 {
-  "name": "bitfrog",
-  "version": "0.0.1",
+  "name": "example-encapsulate-use-fetch",
   "private": true,
+  "scripts": {
+    "build": "nuxi build",
+    "dev": "nuxi dev",
+    "start": "nuxi preview"
+  },
   "devDependencies": {
     "nuxt": "npm:nuxt3@latest"
-  },
-  "scripts": {
-    "dev": "nuxi dev",
-    "build": "nuxi build",
-    "start": "nuxi preview"
   }
 }

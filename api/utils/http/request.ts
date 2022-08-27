@@ -57,4 +57,3 @@ export function request<T = any>(url: NitroFetchRequest | Ref<NitroFetchRequest>
         resolve({ data, pending, error, refresh })
     })
 }
-
